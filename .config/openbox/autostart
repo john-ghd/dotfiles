@@ -1,0 +1,6 @@
+xrdb ~/.Xresources &
+feh --bg-scale ~/.config/openbox/background.png &
+polybar main &
+tint2 &
+conky &
+picom &
