@@ -1,0 +1,123 @@
+[colors]
+foreground = #c2c2c2
+background = #272e32
+border = #74ac67
+module-first-foreground = #000000
+module-first-background = #74ac67
+module-second-foreground = #c2c2c2
+module-second-background = #3d474e
+urgent = #cc0000
+
+[bar/main]
+width = 100%
+height = 28
+enable-ipc = true
+
+foreground = ${colors.foreground}
+background = ${colors.background}
+
+border-bottom-size = 2
+border-bottom-color = ${colors.border}
+
+line-size = 5
+
+font-0 = "Monospace:size=9;3"
+font-1 = "iosevka:size=12;3"
+
+padding-right = 1
+
+module-margin = 1
+modules-left = workspaces
+modules-center = date
+modules-right = kbd sound
+
+[module/workspaces]
+type = internal/xworkspaces
+enable-scroll = false
+
+format = <label-state>
+
+label-active = %name%
+label-active-foreground = ${colors.module-first-foreground}
+label-active-background = ${colors.module-first-background}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-foreground = ${colors.module-second-foreground}
+label-occupied-background = ${colors.background}
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-foreground = ${colors.urgent}
+label-urgent-background = ${colors.background}
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.module-second-foreground}
+label-empty-background = ${colors.background}
+label-empty-padding = 1
+
+[module/date]
+type = internal/date
+date = "%a %H:%M:%S %d/%m/%y"
+
+format = <label>
+format-prefix = 
+format-prefix-foreground = ${colors.module-first-foreground}
+format-prefix-background = ${colors.module-first-background}
+format-prefix-padding = 1
+format-overline = ${colors.background}
+format-underline = ${colors.background}
+
+label = %date%
+label-foreground = ${colors.module-second-foreground}
+label-background = ${colors.module-second-background}
+label-padding = 1
+
+[module/sound]
+type = internal/pulseaudio
+interval = 1
+
+format-volume = <label-volume>
+format-volume-prefix = 奔
+format-volume-prefix-foreground = ${colors.module-first-foreground}
+format-volume-prefix-background = ${colors.module-first-background}
+format-volume-prefix-padding = 1
+format-volume-overline = ${colors.background}
+format-volume-underline = ${colors.background}
+
+label-volume-foreground = ${colors.module-second-foreground}
+label-volume-background = ${colors.module-second-background}
+label-volume-padding = 1
+
+format-muted = <label-muted>
+format-muted-prefix = 婢
+format-muted-prefix-foreground = ${colors.module-first-foreground}
+format-muted-prefix-background = ${colors.module-first-background}
+format-muted-prefix-padding = 1
+format-muted-overline = ${colors.background}
+format-muted-underline = ${colors.background}
+
+label-muted-foreground = ${colors.module-second-foreground}
+label-muted-background = ${colors.module-second-background}
+label-muted-padding = 1
+
+[module/kbd]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+blacklist-2 = caps lock
+
+format = <label-layout>
+format-prefix = 
+format-prefix-foreground = ${colors.module-first-foreground}
+format-prefix-background = ${colors.module-first-background}
+format-prefix-padding = 1
+format-overline = ${colors.background}
+format-underline = ${colors.background}
+
+label-layout = %layout%
+label-layout-foreground = ${colors.module-second-foreground}
+label-layout-background = ${colors.module-second-background}
+label-layout-padding = 1
