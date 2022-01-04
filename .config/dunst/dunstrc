@@ -1,0 +1,23 @@
+[global]
+width = 200
+origin = top-right
+stack_duplicates = false
+frame_width = 2
+alignment = left
+font = "Monospace 9"
+icon_position = off
+
+[urgency_low]
+    frame_color = "#74ac67"
+    background = "#272e32"
+    foreground = "#c2c2c2"
+
+[urgency_normal]
+    frame_color = "#74ac67"
+    background = "#272e32"
+    foreground = "#c2c2c2"
+
+[urgency_critical]
+    frame_color = "#cc0000"
+    background = "#272e32"
+    foreground = "#c2c2c2"
