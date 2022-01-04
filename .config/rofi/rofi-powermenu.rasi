@@ -1,0 +1,58 @@
+configuration
+{
+    disable-history: true;
+}
+
+*
+{
+    font: "iosevka 25";
+}
+
+window
+{
+    location: north;
+    y-offset: 50px;
+    border: 2;
+    border-color: #74ac67;
+    width: 246;
+}
+
+
+inputbar, prompt, entry
+{
+    enabled: false;
+}
+
+listview
+{
+    layout: horizontal;
+    background-color: #272e32;
+    spacing: 13;
+    padding: 13;
+    cycle: false;
+}
+
+element
+{
+    border: 0;
+    border-color: #74ac67;
+    background-color: #3d474e;
+}
+
+element.selected
+{
+    background-color: #74ac67;
+}
+
+element-text
+{
+    color: #c2c2c2;
+    margin: 9 20;
+    background-color: #3d474e;
+}
+
+element-text.selected
+{
+    color: #000000;
+    background-color: #74ac67;
+}
