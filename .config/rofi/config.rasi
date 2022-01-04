@@ -1,0 +1,85 @@
+configuration 
+{
+    disable-history: true;
+}
+
+@theme "/dev/null"
+
+window
+{
+    location: center;
+    font: "mono 10";
+    width: 35%;
+    border: 9px;
+    border-color: #272e32;
+}
+
+mainbox
+{
+    background-color: #272e32;
+    spacing: 8px;
+}
+
+inputbar
+{
+    spacing: 0;
+    background-color: #272e32;
+}
+
+prompt
+{
+    padding: 2px 8px;
+    color: #000000;
+    background-color: #74ac67;
+}
+
+entry
+{
+    padding: 2px 8px;
+    color: #dfdfdf;
+    background-color: #3d474e;
+}
+
+case-indicator
+{
+    enabled: false;
+}
+
+listview
+{
+    background-color: #272e32;
+    spacing: 5px;
+    lines: 10;
+    cycle: false;
+}
+
+element
+{
+    padding: 5px;
+    background-color: #3d474e;
+}
+
+element.selected
+{
+    color: #000000;
+    background-color: #74ac67;
+}
+
+element-text
+{
+    color: #c2c2c2;
+    background-color: #3d474e;
+    highlight: None;
+}
+
+element-text.selected
+{
+    color: #000000;
+    background-color: #74ac67;
+}
+
+error-message, textbox
+{
+    color: #c2c2c2;
+    background-color: #3d474e;
+}
