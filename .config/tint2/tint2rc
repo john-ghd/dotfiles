@@ -1,0 +1,95 @@
+## backgrounds ##
+
+# panel
+rounded = 0
+border_width = 2
+border_sides = T
+background_color = #272e32 100
+border_color = #74ac67 100
+background_color_hover = #272e32 100
+border_color_hover = #74ac67 100
+background_color_pressed = #272e32 100
+border_color_pressed = #74ac67 100 
+
+# taskbar
+rounded = 0
+border_width = 0
+border_sides = T
+background_color = #272e32 100
+border_color = #74ac67 100
+background_color_hover = #272e32 100
+border_color_hover = #74ac67 100
+background_color_pressed = #272e32 100
+border_color_pressed = #74ac67 100 
+
+# default task
+rounded = 0
+border_width = 2
+border_sides = B
+background_color = #272e32 100
+border_color = #505d67 100
+background_color_hover = #20262a 100
+border_color_hover = #384148 100
+background_color_pressed = #20262a 100
+border_color_pressed = #384148 100 
+
+# active task
+rounded = 0
+border_width = 2
+border_sides = B
+background_color = #272e32 100
+border_color = #74ac67 100
+background_color_hover = #20262a 100
+border_color_hover = #507747 100
+background_color_pressed = #20262a 100
+border_color_pressed = #507747 100 
+
+# iconified task
+rounded = 0
+border_width = 2
+border_sides = B
+background_color = #272e32 100
+border_color = #3d474e 100
+background_color_hover = #20262a 100
+border_color_hover = #323a40 100
+background_color_pressed = #20262a 100
+border_color_pressed = #323a40 100 
+
+# urgent task
+rounded = 0
+border_width = 2
+border_sides = B
+background_color = #272e32 100
+border_color = #cc0000 100
+background_color_hover = #20262a 00
+border_color_hover = #880000 100
+background_color_pressed = #20262a 100
+border_color_pressed = #880000 100 
+
+## panel ##
+panel_items = T
+panel_position = bottom center horizontal
+panel_size = 100% 30
+panel_background_id = 1
+panel_layer = top
+
+## taskbar ##
+taskbar_mode = single_desktop
+taskbar_padding = 0 0 5
+taskbar_background_id = 2
+
+## task ##
+task_icon = 0
+task_text = 1
+task_centered = 1
+task_maximum_size = 250
+task_padding = 20 1 0
+urgent_nv_of_blink = 10
+task_font = Monospace 9
+task_font_color = #c2c2c2 100
+task_background_id = 3
+task_active_font_color = #74ac67
+task_active_background_id = 4
+task_iconified_font_color = #5f6f7a
+task_iconified_background_id = 5
+task_urgent_background_id = 6
