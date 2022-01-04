@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_config>
+    <resistance>
+	<strength>10</strength>
+	<screen_edge_strength>10</screen_edge_strength>
+    </resistance>
+
+    <focus>
+	<focusNew>yes</focusNew>
+	<followMouse>no</followMouse>
+    </focus>
+
+    <placement>
+	    <policy>Smart</policy>
+	    <center>no</center>
+    </placement>
+
+    <theme>
+	<name>simple-dark</name>
+	<titleLayout>IMC</titleLayout>
+	<animateIconify>no</animateIconify>
+	<font place="ActiveWindow">
+	    <size>12</size>
+	</font>
+	<font place="InactiveWindow">
+	    <size>12</size>
+	</font>
+    </theme> 
+
+    <desktops>
+	<number>8</number>
+	<firstDesk>1</firstDesk>
+	<popupTime>0</popupTime>
+	<names>
+	    <name>0x1</name>
+	    <name>0x2</name>
+	    <name>0x3</name>
+	    <name>0x4</name>
+	    <name>0x5</name>
+	    <name>0x6</name>
+	    <name>0x7</name>
+	    <name>0x8</name>
+	</names>
+    </desktops>
+    
+    <resize>
+	<popupShow>Always</popupShow>
+	<popupPosition>Center</popupPosition>
+    </resize>
+    
+    <keyboard>
+	<keybind key="XF86AudioRaiseVolume">
+	    <action name="Execute"><command>amixer sset Master 1%+</command></action>
+	</keybind>
+
+	<keybind key="XF86AudioLowerVolume">
+	    <action name="Execute"><command>amixer sset Master 1%-</command></action>
+	</keybind>
+
+	<keybind key="XF86AudioMute">
+	    <action name="Execute"><command>amixer sset Master toggle</command></action>
+	</keybind>
+	
+	<keybind key="C-grave">
+	    <action name="Execute"><command>urxvt</command></action>
+	</keybind>
+	
+	<keybind key="W-R">
+	    <action name="Execute"><command>rofi -show run</command></action>
+	</keybind>
+
+	<keybind key="W-S-L">
+	    <action name="Execute">
+		<command>rofi-powermenu</command>
+	    </action>
+	</keybind>
+    </keyboard>
+</openbox_config>
